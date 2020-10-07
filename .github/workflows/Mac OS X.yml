@@ -1,0 +1,25 @@
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  macos:
+    runs-on: macOS-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Xcodebuild Action
+        uses: sersoft-gmbh/xcodebuild-action@v1.1
+        with:
+          # The path to the xcodeproj to build. Mutually exclusive with `workspace`.
+          project: mortal-stack.xcodeproj
+          # The scheme to build. Required when using a workspace.
+          scheme: mortal-stack
+          # The destination specifier to build.
+          destination: platform=macOS
+          # The configuration to build.
+          configuration: Debug
+          # The action to perform (e.g. build, test, ...).
+          action: build
