@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		479B91E9252E02B300F162E9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 479B91E8252E02B300F162E9 /* main.cpp */; };
+		472BCADF252E77F5001BE093 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 472BCADE252E77F5001BE093 /* main.c */; };
+		472BCAE3252E7849001BE093 /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 472BCAE2252E7849001BE093 /* stack.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		472BCADE252E77F5001BE093 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		472BCAE1252E7849001BE093 /* stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		472BCAE2252E7849001BE093 /* stack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = stack.c; sourceTree = "<group>"; };
 		479B91E5252E02B300F162E9 /* mortal-stack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "mortal-stack"; sourceTree = BUILT_PRODUCTS_DIR; };
-		479B91E8252E02B300F162E9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		479B91F0252E039F00F162E9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		479B91F1252E039F00F162E9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		479B91F2252E03AA00F162E9 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -63,7 +66,9 @@
 		479B91E7252E02B300F162E9 /* mortal-stack */ = {
 			isa = PBXGroup;
 			children = (
-				479B91E8252E02B300F162E9 /* main.cpp */,
+				472BCADE252E77F5001BE093 /* main.c */,
+				472BCAE1252E7849001BE093 /* stack.h */,
+				472BCAE2252E7849001BE093 /* stack.c */,
 			);
 			path = "mortal-stack";
 			sourceTree = "<group>";
@@ -124,7 +129,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				479B91E9252E02B300F162E9 /* main.cpp in Sources */,
+				472BCAE3252E7849001BE093 /* stack.c in Sources */,
+				472BCADF252E77F5001BE093 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

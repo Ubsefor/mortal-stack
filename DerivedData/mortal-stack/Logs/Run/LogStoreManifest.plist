@@ -5,6 +5,177 @@
 	<key>logFormatVersion</key>
 	<integer>10</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>1D56B6B6-C711-413F-8121-CAC787D22FDD</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>1D56B6B6-C711-413F-8121-CAC787D22FDD.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>mortal-stack project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>mortal-stack</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run mortal-stack</string>
+			<key>timeStartedRecording</key>
+			<real>623805118.83838105</real>
+			<key>timeStoppedRecording</key>
+			<real>623805121.59809303</real>
+			<key>title</key>
+			<string>Run mortal-stack</string>
+			<key>uniqueIdentifier</key>
+			<string>1D56B6B6-C711-413F-8121-CAC787D22FDD</string>
+		</dict>
+		<key>659A0D26-D788-430F-8FD2-5380B000DA5A</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>659A0D26-D788-430F-8FD2-5380B000DA5A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>mortal-stack project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>mortal-stack</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run mortal-stack</string>
+			<key>timeStartedRecording</key>
+			<real>623776086.55707598</real>
+			<key>timeStoppedRecording</key>
+			<real>623776101.53444004</real>
+			<key>title</key>
+			<string>Run mortal-stack</string>
+			<key>uniqueIdentifier</key>
+			<string>659A0D26-D788-430F-8FD2-5380B000DA5A</string>
+		</dict>
+		<key>819A088D-A28C-4A0A-B16E-8319E5065735</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>819A088D-A28C-4A0A-B16E-8319E5065735.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>mortal-stack project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>mortal-stack</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run mortal-stack</string>
+			<key>timeStartedRecording</key>
+			<real>623803744.979581</real>
+			<key>timeStoppedRecording</key>
+			<real>623803746.29442</real>
+			<key>title</key>
+			<string>Run mortal-stack</string>
+			<key>uniqueIdentifier</key>
+			<string>819A088D-A28C-4A0A-B16E-8319E5065735</string>
+		</dict>
+		<key>882FF9C4-1A25-44FD-9B44-2A468A869DD7</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>882FF9C4-1A25-44FD-9B44-2A468A869DD7.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>mortal-stack project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>mortal-stack</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run mortal-stack</string>
+			<key>timeStartedRecording</key>
+			<real>623803782.54128897</real>
+			<key>timeStoppedRecording</key>
+			<real>623803785.27981806</real>
+			<key>title</key>
+			<string>Run mortal-stack</string>
+			<key>uniqueIdentifier</key>
+			<string>882FF9C4-1A25-44FD-9B44-2A468A869DD7</string>
+		</dict>
+		<key>E69C0260-5B30-4C3C-A557-6E5334CD72A1</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>E69C0260-5B30-4C3C-A557-6E5334CD72A1.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>mortal-stack project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>mortal-stack</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run mortal-stack</string>
+			<key>timeStartedRecording</key>
+			<real>623803731.31491399</real>
+			<key>timeStoppedRecording</key>
+			<real>623803744.87651205</real>
+			<key>title</key>
+			<string>Run mortal-stack</string>
+			<key>uniqueIdentifier</key>
+			<string>E69C0260-5B30-4C3C-A557-6E5334CD72A1</string>
+		</dict>
+	</dict>
 </dict>
 </plist>
