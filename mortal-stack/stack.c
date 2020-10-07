@@ -101,16 +101,14 @@ Stack* newStack( const size_t start_capacity )
 
 void changeCapacity( Stack* stack, const double factor, const OPERATION operation )
 {
-    if ( operation == PUSH )
-    {
+    switch (operation) {
+        case PUSH:
         stack->capacity = factor * stack->capacity;
-    }
-    else if ( operation == POP )
-    {
+            break;
+        case POP:
         stack->capacity = (size_t) ( stack->capacity / factor );
-    }
-    else
-    {
+            break;
+        default:
         return;
     }
     
