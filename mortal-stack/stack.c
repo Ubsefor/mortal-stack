@@ -184,7 +184,7 @@ ERROR_MESSAGE stackOK( Stack* stack )
     count++;
     
     
-    printf("FUNCTION CALL # %d\n", count);
+    printf("FUNCTION CALL # %zu\n", count);
     printf("->---<-\n");
      
     printf("CHECK SUM NATIVE: %d\n", stack->checksum);
