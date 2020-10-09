@@ -66,8 +66,8 @@ void constrStack( Stack* stack, const size_t start_capacity, const char* var_nam
     stack->stack_canary_b = (long int*) ( (char*) stack->data + sizeof ( elem_t ) * start_capacity );
     
         //Fill stack canaries
-    stack->stack_canarry_a = (long int*) stack;
-    stack->stack_canarry_b = (long int*) stack;
+    stack->data_canary_a = (long int*) stack;
+    stack->data_canary_b = (long int*) stack;
     
     stack->capacity = start_capacity;
     stack->size     = 0;
@@ -88,8 +88,8 @@ Stack* newStack( const size_t start_capacity )
     long int* stack_canarry_a = (long int*) calloc( 1, sizeof ( Stack ) + sizeof ( long int ) * 2 );
     Stack   * new_stack       = (Stack*) ( (char*) stack_canarry_a + sizeof ( long int ) );
     
-    new_stack->stack_canarry_a = (long int*) stack_canarry_a;
-    new_stack->stack_canarry_b = (long int*) ( (char*) new_stack + sizeof ( Stack ) - sizeof ( long int ) * 2 );
+    new_stack->data_canary_a = (long int*) stack_canarry_a;
+    new_stack->data_canary_b = (long int*) ( (char*) new_stack + sizeof ( Stack ) - sizeof ( long int ) * 2 );
     
     constrStack( new_stack, start_capacity, var_name );
     
@@ -195,11 +195,11 @@ ERROR_MESSAGE stackOK( Stack* stack )
     {
         return NULL_POINTER_STACK;
     }
-    else if ( stack->stack_canarry_a != (long int*) stack /*|| stack->stack_canarry_a != (long int*)((char*)stack - sizeof(long int))*/ )
+    else if ( stack->data_canary_a != (long int*) stack /*|| stack->stack_canarry_a != (long int*)((char*)stack - sizeof(long int))*/ )
     {
         return STACK_CANARY_A;
     }
-    else if ( stack->stack_canarry_b != (long int*) stack /*|| stack->stack_canarry_b != (long int*)((char*)stack + sizeof(Stack) - sizeof(long int) * 2)*/ )
+    else if ( stack->data_canary_b != (long int*) stack /*|| stack->stack_canarry_b != (long int*)((char*)stack + sizeof(Stack) - sizeof(long int) * 2)*/ )
     {
         return STACK_CANARY_B;
     }
@@ -313,7 +313,7 @@ void stackDump( Stack* stack )
     
     printf( "{\n\tsize = %zu\n\tcapacity = %zu\n\tbuffer[0x%p]"
            "\n\tstack_canarry_a = 0x%p\n\tstack_canarry_b = 0x%p\n",
-           stack->size, stack->capacity, stack->data, stack->stack_canarry_a, stack->stack_canarry_b );
+           stack->size, stack->capacity, stack->data, stack->data_canary_a, stack->data_canary_b );
     
     if ( strcmp( stack_status, "NULL BUFFER" ) == 0 )
     {

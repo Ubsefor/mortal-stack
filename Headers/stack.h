@@ -53,7 +53,7 @@ typedef enum ERROR_MESSAGE
 
 typedef struct Stack
 {
-    long int* stack_canarry_a;
+    long int* data_canary_a;
     
     size_t  size;
     size_t  capacity;
@@ -64,7 +64,7 @@ typedef struct Stack
     long int* stack_canary_a;
     long int* stack_canary_b;
     
-    long int* stack_canarry_b;
+    long int* data_canary_b;
 } Stack;
 
     //! Calculates checksum of stack structure
