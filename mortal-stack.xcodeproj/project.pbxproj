@@ -44,13 +44,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		471FBE4425304D3C008FB851 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				472BCADE252E77F5001BE093 /* main.c */,
+				472BCAE2252E7849001BE093 /* stack.c */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		471FBE4525304D4E008FB851 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				472BCAE1252E7849001BE093 /* stack.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		471FBE4725304DE2008FB851 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Docs;
+			sourceTree = "<group>";
+		};
 		479B91DC252E02B300F162E9 = {
 			isa = PBXGroup;
 			children = (
 				479B91F2252E03AA00F162E9 /* .gitignore */,
 				479B91F0252E039F00F162E9 /* LICENSE */,
 				479B91F1252E039F00F162E9 /* README.md */,
-				479B91E7252E02B300F162E9 /* mortal-stack */,
+				471FBE4725304DE2008FB851 /* Docs */,
+				471FBE4525304D4E008FB851 /* Headers */,
+				471FBE4425304D3C008FB851 /* Sources */,
 				479B91E6252E02B300F162E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,16 +87,6 @@
 				479B91E5252E02B300F162E9 /* mortal-stack */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		479B91E7252E02B300F162E9 /* mortal-stack */ = {
-			isa = PBXGroup;
-			children = (
-				472BCADE252E77F5001BE093 /* main.c */,
-				472BCAE1252E7849001BE093 /* stack.h */,
-				472BCAE2252E7849001BE093 /* stack.c */,
-			);
-			path = "mortal-stack";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

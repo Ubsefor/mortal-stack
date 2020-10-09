@@ -11,6 +11,8 @@
 
 int main()
 {
+    srand(time(NULL));
+    
     Stack stack = {};
     сonstrStack( &stack, 1 );
     

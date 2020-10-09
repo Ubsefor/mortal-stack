@@ -24,7 +24,7 @@ int isZero( elem_t value )
 
 int checkSum( Stack* stack )
 {
-    const int hash = 15487457 * 23;
+    const int hash = 19 * 13 * 29 * 51;
     
     int       check_sum = (int) stack;
     check_sum += (int) stack->capacity;
@@ -83,7 +83,7 @@ void constrStack( Stack* stack, const size_t start_capacity, const char* var_nam
 Stack* newStack( const size_t start_capacity )
 {
     char* var_name = (char*) calloc( 72, sizeof ( char ) );
-    strcpy( var_name, "<Name of variable is not available when called newStack_simple>" );
+    strcpy( var_name, "<Name of variable is not available when called newStack>" );
     
     long int* stack_canarry_a = (long int*) calloc( 1, sizeof ( Stack ) + sizeof ( long int ) * 2 );
     Stack   * new_stack       = (Stack*) ( (char*) stack_canarry_a + sizeof ( long int ) );
@@ -250,7 +250,7 @@ ERROR_MESSAGE stackOK( Stack* stack )
     return OK;
 }
 
-    // TODO: Add writing this shit to file
+    // TODO: Add routing this shit to file
 
 void stackDump( Stack* stack )
 {
