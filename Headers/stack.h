@@ -16,7 +16,7 @@
 #include <time.h>
 
 #define EPS     1e-9
-#define NOLL    NAN
+
 
 #define сonstrStack( pseudo_address, start_size )                  \
 char* var_name = (char*) calloc( 72, sizeof ( char ) );            \

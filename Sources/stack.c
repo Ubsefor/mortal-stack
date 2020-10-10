@@ -17,6 +17,8 @@ assert( 0 );                            \
 #else ASSERT_OK( stack ) {}
 #endif
 
+#define MAXNAMELENGTH 72
+
 int isZero( elem_t value )
 {
     return ( fabs( value ) < EPS );
@@ -54,7 +56,7 @@ void enzeroStack( elem_t* start, elem_t* end )
 {
     for ( int i = 0; i < end - start + 1; ++i )
     {
-        start[i] = NOLL;
+        start[i] = NAN;
     }
 }
 
@@ -82,13 +84,13 @@ void constrStack( Stack* stack, const size_t start_capacity, const char* var_nam
 
 Stack* newStack( const size_t start_capacity )
 {
-    char* var_name = (char*) calloc( 72, sizeof ( char ) );
+    char* var_name = (char*) calloc( MAXNAMELENGTH, sizeof ( char ) );
     strcpy( var_name, "<Name of variable is not available when called newStack>" );
     
-    long int* stack_canarry_a = (long int*) calloc( 1, sizeof ( Stack ) + sizeof ( long int ) * 2 );
-    Stack   * new_stack       = (Stack*) ( (char*) stack_canarry_a + sizeof ( long int ) );
+    long int* stack_canary_a = (long int*) calloc( 1, sizeof ( Stack ) + sizeof ( long int ) * 2 );
+    Stack   * new_stack       = (Stack*) ( (char*) stack_canary_a + sizeof ( long int ) );
     
-    new_stack->data_canary_a = (long int*) stack_canarry_a;
+    new_stack->data_canary_a = (long int*) stack_canary_a;
     new_stack->data_canary_b = (long int*) ( (char*) new_stack + sizeof ( Stack ) - sizeof ( long int ) * 2 );
     
     constrStack( new_stack, start_capacity, var_name );
@@ -159,7 +161,7 @@ void stackPop( Stack* stack )
     
     checkSizeCapacity( stack, POP );
     
-    stack->data[stack->size - 1] = NOLL;
+    stack->data[stack->size - 1] = NAN;
     --( stack->size );
     
     stack->checksum = checkSum( stack );
@@ -189,17 +191,15 @@ ERROR_MESSAGE stackOK( Stack* stack )
     printf("CHECK SUM AFTER: %d\n", checkSum(stack));
     printf("->---<-\n");
     
-    
-    
     if ( stack == NULL )
     {
         return NULL_POINTER_STACK;
     }
-    else if ( stack->data_canary_a != (long int*) stack /*|| stack->stack_canarry_a != (long int*)((char*)stack - sizeof(long int))*/ )
+    else if ( stack->data_canary_a != (long int*) stack /*|| stack->stack_canary_a != (long int*)((char*)stack - sizeof(long int))*/ )
     {
         return STACK_CANARY_A;
     }
-    else if ( stack->data_canary_b != (long int*) stack /*|| stack->stack_canarry_b != (long int*)((char*)stack + sizeof(Stack) - sizeof(long int) * 2)*/ )
+    else if ( stack->data_canary_b != (long int*) stack /*|| stack->stack_canary_b != (long int*)((char*)stack + sizeof(Stack) - sizeof(long int) * 2)*/ )
     {
         return STACK_CANARY_B;
     }
@@ -312,7 +312,7 @@ void stackDump( Stack* stack )
     }
     
     printf( "{\n\tsize = %zu\n\tcapacity = %zu\n\tbuffer[0x%p]"
-           "\n\tstack_canarry_a = 0x%p\n\tstack_canarry_b = 0x%p\n",
+           "\n\tstack_canary_a = 0x%p\n\tstack_canary_b = 0x%p\n",
            stack->size, stack->capacity, stack->data, stack->data_canary_a, stack->data_canary_b );
     
     if ( strcmp( stack_status, "NULL BUFFER" ) == 0 )
